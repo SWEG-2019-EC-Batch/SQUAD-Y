@@ -15,3 +15,5 @@ Add them all and assign to total
 Compare the total to 50 using conditional operator to determine if its pass or fail
 Display the total to one decimal place and the Pass or Fail result
 
+formulas used
+total = (assignment * 0.20) + (midterm * 0.30) + (finalExam * 0.50)
