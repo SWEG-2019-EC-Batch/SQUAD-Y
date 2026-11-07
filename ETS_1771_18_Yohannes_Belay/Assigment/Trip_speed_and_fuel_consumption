@@ -1,0 +1,28 @@
+1) Inputs and Outputs
+A) Inputs
+Distance (km)
+Travel time (hours)
+Trave time (minutes)
+Fuel consumption (liters per 100km)
+price per liter (birr)
+B) Outputs
+Average speed (km/h)
+Fuel used(liters)
+Fuel cost(birr)
+
+2) Process
+Read Distance (km),Travel time (hours),Trave time (minutes),Fuel consumption (liters per 100km),price per liter (birr)
+Convert travel time into hours
+calculate average speed
+calculate fuel used
+calculate fuel cost
+
+Formulas used
+
+Total_time= Travel_hour +(Travel_minutes/60.0)
+
+    Average_Speed= Distance/Total_time
+
+    Fuel_used= Distance*Fuel_consuption_rate/100
+
+    Fuel_cost=Fuel_used*Price_per_liter
