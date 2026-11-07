@@ -1,1 +1,14 @@
-
+1) Inputs and Outputs
+A) Inputs
+Electricity units
+B) Outputs
+Energy charge
+Service charge
+Total Bill
+2) Process
+Read Electricity units
+when units are greater than 50 and less multiply by 1.5 assign to energy charge
+when units are greater than 50 multiply by 2 assign to energy charge
+have a constant of service charge of 10 
+Add the energy charge and service charge 
+Display energy charge , service charge and the total bill to two decimal place and 
