@@ -4,12 +4,12 @@ using namespace std;
 
 int main() {
     int energy_consumption ;
-    const int service_charge=10;
+    const int service_charge=10; // this needs to be constant because it doesnt change throught
     double energy_charge,  total_bill ;
 
     cout << "Enter energy consumption (Kwh): ";
-    cin >> energy_consumption;
-    energy_charge=(energy_consumption<=50)? energy_consumption*1.5: (50*1.5 +(energy_consumption-50)*2);
+    cin >> energy_consumption; // value goes in 
+    energy_charge=(energy_consumption<=50)? energy_consumption*1.5: (50*1.5 +(energy_consumption-50)*2); // processing and branching becuse there are two cases
     
 
 
@@ -17,7 +17,7 @@ int main() {
 
 
     cout << fixed << setprecision(2);
-    cout<< "\nEnergy charge: "<<energy_charge;
+    cout<< "\nEnergy charge: "<<energy_charge; //output goes out
     cout<<"\nService charge: "<<service_charge;
     cout<<"\nTotal Bill: "<<total_bill;
     
