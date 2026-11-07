@@ -14,7 +14,4 @@ have a constant of service charge of 10
 Add the energy charge and service charge 
 Display energy charge , service charge and the total bill to two decimal place and 
 
-formulas used
-total = (assignment * 0.20) +
-            (midterm * 0.30) +
-            (finalExam * 0.50)
+
