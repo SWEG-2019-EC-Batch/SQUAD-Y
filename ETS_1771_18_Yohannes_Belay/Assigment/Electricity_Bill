@@ -14,4 +14,8 @@ have a constant of service charge of 10
 Add the energy charge and service charge 
 Display energy charge , service charge and the total bill to two decimal place and 
 
+formulas used
 
+energy_charge=(energy_consumption<=50)? energy_consumption*1.5: (50*1.5 +(energy_consumption-50)*2)
+
+    total_bill = energy_charge+service_charge
