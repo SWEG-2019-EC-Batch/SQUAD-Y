@@ -1,1 +1,17 @@
+1) Inputs and Outputs
+A) Inputs
+Assignments
+Midterm
+Final
+B) Outputs
+Total
+Pass/Fail
+2) Process
+Read Assignment, midterm and final exam marks
+Multiply the assignment mark by 0.2 
+Multiply midterm by 0.3
+Multiply final by 0.5
+Add them all and assign to total 
+Compare the total to 50 using conditional operator to determine if its pass or fail
+Display the total to one decimal place and the Pass or Fail result
 
