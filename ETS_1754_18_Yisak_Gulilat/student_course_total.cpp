@@ -1,5 +1,4 @@
 /*
-  Task 1: student course total
   (a) inputs and outputs
       inputs : assignment mark, midterm mark, final mark (each out of 100).
       outputs: total(one decimal place) and the word Pass or Fail.
