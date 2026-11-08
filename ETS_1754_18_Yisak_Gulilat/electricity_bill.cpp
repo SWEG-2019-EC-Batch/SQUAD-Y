@@ -3,7 +3,7 @@
       input  : units of electricity used in a month(kWh, whole number).
       outputs: energy charge, service charge, total bill(two decimals each).
   (b) Process
-      1. Declare constants:first block = 50 units, rate for the first block = 1.50 birr,
+      1. Declare constants:first block = 50 units, rate for the first block = 1.50 birr, and declare variables.
          rate above the block = 2.00 birr, service charge = 10.00 birr.
       2. Read the number of units.
       3. Compute the energy charge with the conditional operator:
