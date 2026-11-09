@@ -57,4 +57,28 @@ Constants:
 #include <iostream>
 #include <iomanip>
 using namespace std;
-int main() {}
+
+int main() {
+// Step 4.1 and 4.2: declaration, initialization and constants
+    const double ASSIGNMENT_PERCENTAGE = 0.2;
+    const double MIDTERM_PERCENTAGE = 0.3;
+    const double FINAL_PERCENTAGE = 0.5;
+    const double PASS_MARK = 50.0;
+    double assignment, midTerm, final, total;
+    string passFail;
+
+    // Step 4.3: read input
+    cout << "Enter assignment, midterm, and final marks (each out of 100) separated by spaces: ";
+    cin >> assignment >> midTerm >> final;
+
+    // Step 4.4: perform the operations
+    total = (assignment * ASSIGNMENT_PERCENTAGE) + (midTerm * MIDTERM_PERCENTAGE) + (final * FINAL_PERCENTAGE);
+    passFail = (total >= PASS_MARK) ? "Pass" : "Fail";
+
+    // Step 4.5: print the result
+    cout << fixed << setprecision(1);
+    cout << "Total: " << total << endl;
+    cout << "Result: " << passFail << endl;
+
+    return 0;
+}
