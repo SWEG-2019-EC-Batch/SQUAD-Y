@@ -53,3 +53,8 @@ Constants:
     cout << "Total: " << total << endl;
     cout << "Result: " << passFail << endl;
 
+5. Write the code
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main() 
