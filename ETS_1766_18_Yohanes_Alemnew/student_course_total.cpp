@@ -18,3 +18,20 @@ Write a C++ program that reads a student’s assignment, midterm and final marks
 -Use the conditional operator to determine if the student has passed or failed based on the total.
 -Print the total and the result.
 
+4. Design the program
+4.1 Variables Definition
+      Variables         Type
+      assignment        double
+      midTerm           double
+      final             double
+      total             double
+      passFail          string
+
+4.2 Constant definition
+    const double ASSIGNMENT_PERCENTAGE = 0.2;
+    const double MIDTERM_PERCENTAGE = 0.3;
+    const double FINAL_PERCENTAGE = 0.5;
+    const double PASS_MARK = 50.0;
+
+    
+ 
