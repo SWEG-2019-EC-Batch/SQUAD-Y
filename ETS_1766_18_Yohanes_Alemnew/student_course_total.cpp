@@ -9,6 +9,11 @@ Write a C++ program that reads a student’s assignment, midterm and final marks
 2.2 Output
 -Total 
 -Pass or Fail
+Constants:
+-Assignment percentage
+-Midterm percentage
+-Final percentage
+-Pass mark
 
 3. Process (operations)
 -Declare variables for assignment, midterm, final, and total.
@@ -33,5 +38,18 @@ Write a C++ program that reads a student’s assignment, midterm and final marks
     const double FINAL_PERCENTAGE = 0.5;
     const double PASS_MARK = 50.0;
 
-    
- 
+4.3 Reading input
+    cout << "Enter assignment, midterm, and final marks (each out of 100) separated by spaces: ";
+    cin >> assignment >> midTerm >> final;
+
+4.4 Perform the operations 
+-Calculate the total:
+    total = (assignment * ASSIGNMENT_PERCENTAGE) + (midTerm * MIDTERM_PERCENTAGE) + (final * FINAL_PERCENTAGE);
+-Determine pass or fail:
+    passFail = (total >= PASS_MARK) ? "Pass" : "Fail";
+
+4.5 Print the result
+    cout << fixed << setprecision(1);
+    cout << "Total: " << total << endl;
+    cout << "Result: " << passFail << endl;
+
