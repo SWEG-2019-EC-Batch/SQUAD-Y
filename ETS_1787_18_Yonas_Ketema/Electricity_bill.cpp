@@ -65,6 +65,10 @@ int main() {
  cout << "Energy charge: " << energycharge << "birr" << endl;
  cout << "Service charge: " << Service_Charge << "birr" << endl;
  cout << "Total bill: " << totalbill << "birr" << endl;
+
+ return 0;
+
+}
  
  
   
