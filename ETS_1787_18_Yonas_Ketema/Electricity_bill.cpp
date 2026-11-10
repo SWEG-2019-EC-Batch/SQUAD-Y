@@ -50,3 +50,10 @@ int main() {
   const double Rate_Initial = 1.50;
   const double Rate_Above = 2.00;
   const double Service_Charge = 10.00;
+  
+ int units ;
+ cout << "Enter electricity units used (kwh): ";
+ cin >> units ;
+ 
+  
+
