@@ -74,4 +74,9 @@ int main() {
   double total = Assignment_Weight * assignment + Midterm_Weight * midterm + Final_Weight * finalmark ;
 
   cout << fixed << setprecision(1);
+  cout << "Course total: " << total << endl;
+  cout << "Result: " << (total >= Pass_Mark ? "Pass" : "Fail") << endl;
+
+  return 0;
+}
   
