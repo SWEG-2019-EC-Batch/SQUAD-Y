@@ -72,4 +72,6 @@ int main() {
   cin >> finalmark ;
 
   double total = Assignment_Weight * assignment + Midterm_Weight * midterm + Final_Weight * finalmark ;
+
+  cout << fixed << setprecision(1);
   
