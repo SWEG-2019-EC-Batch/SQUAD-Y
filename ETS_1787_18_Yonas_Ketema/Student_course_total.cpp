@@ -33,9 +33,9 @@ Constants:
       passFail          string
 
 4.2 Constant definition
-    const double ASSIGNMENT_PERCENTAGE = 0.2;
-    const double MIDTERM_PERCENTAGE = 0.3;
-    const double FINAL_PERCENTAGE = 0.5;
+    const double ASSIGNMENT_Weight = 0.2;
+    const double MIDTERM_Weight = 0.3;
+    const double FINAL_Weight = 0.5;
     const double PASS_MARK = 50.0;
 
 4.3 Reading input
@@ -44,15 +44,16 @@ Constants:
 
 4.4 Perform the operations 
 -Calculate the total:
-    total = (assignment * ASSIGNMENT_PERCENTAGE) + (midTerm * MIDTERM_PERCENTAGE) + (final * FINAL_PERCENTAGE);
+    total = (assignment * ASSIGNMENT_Weight) + (midTerm * MIDTERM_Weight) + (final * FINAL_Weight);
 -Determine pass or fail:
     passFail = (total >= PASS_MARK) ? "Pass" : "Fail";
 
 4.5 Print the result
     cout << fixed << setprecision(1);
     cout << "Total: " << total << endl;
-    cout << "Result: " << passFail << endl; */
-C++ program
+    cout << "Result: " << passFail << endl; 
+C++ program */
+
 #include <iostream>
 #include <iomanip>
 using namespace std;
