@@ -9,11 +9,6 @@ Write a C++ program that reads a student’s assignment, midterm and final marks
 2.2 Output
 -Total 
 -Pass or Fail
-Constants:
--Assignment percentage
--Midterm percentage
--Final percentage
--Pass mark
 
 3. Process (operations)
 -Declare variables for assignment, midterm, final, and total.

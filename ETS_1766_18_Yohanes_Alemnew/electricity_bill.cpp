@@ -3,4 +3,9 @@ Write a C++ program that reads the electricity units (kWh, a whole number) used 
 
 2. Problem analysis
 2.1 Input
+-Electricity units
+2.2 Output
+-Energy charge
+-Service charge
+-Total bill
 
