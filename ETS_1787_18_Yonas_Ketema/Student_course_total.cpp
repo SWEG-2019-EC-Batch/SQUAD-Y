@@ -70,3 +70,6 @@ int main() {
   cin >> midterm ;
   cout << "Enetr your final mark (out of 100): ";
   cin >> finalmark ;
+
+  double total = Assignment_Weight * assignment + Midterm_Weight * midterm + Final_Weight * finalmark ;
+  
