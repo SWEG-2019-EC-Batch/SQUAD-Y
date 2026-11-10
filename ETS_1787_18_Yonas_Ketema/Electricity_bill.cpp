@@ -54,6 +54,9 @@ int main() {
  int units ;
  cout << "Enter electricity units used (kwh): ";
  cin >> units ;
+
+ int initialunits = (units > Tier_Limit) ? Tier_Limit : units;
+ int extraunits = (units > Tier_Limit) ? (units - Tier_Limit) : 0;
  
   
 
