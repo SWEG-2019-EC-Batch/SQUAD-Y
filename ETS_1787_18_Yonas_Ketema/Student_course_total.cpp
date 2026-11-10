@@ -53,12 +53,20 @@ Constants:
     cout << "Total: " << total << endl;
     cout << "Result: " << passFail << endl; */
 C++ program
-  #include <iostream>
-  #include <iomanip>
-  using namespace std;
+#include <iostream>
+#include <iomanip>
+using namespace std;
 
 int main() {
   const double Assignment_Weight = 0.2;
   const double Midterm_Weight = 0.3;
   const double Final_Weight = 0.5;
   const double Pass_Mark = 50;
+
+  double assignment, midterm, finalmark;
+  cout << "Enter your assignment mark (out of 100): ";
+  cin >> assignment ;
+  cout << "Enter your midterm mark (out of 100): ";
+  cin >> midterm ;
+  cout << "Enetr your final mark (out of 100): ";
+  cin >> finalmark ;
