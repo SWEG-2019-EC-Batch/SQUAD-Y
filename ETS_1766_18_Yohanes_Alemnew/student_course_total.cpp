@@ -67,15 +67,15 @@ int main() {
     double assignment, midTerm, final, total;
     string passFail;
 
-    // Step 4.3: read input
+// Step 4.3: read input
     cout << "Enter assignment, midterm, and final marks (each out of 100) separated by spaces: ";
     cin >> assignment >> midTerm >> final;
 
-    // Step 4.4: perform the operations
+// Step 4.4: perform the operations
     total = (assignment * ASSIGNMENT_PERCENTAGE) + (midTerm * MIDTERM_PERCENTAGE) + (final * FINAL_PERCENTAGE);
     passFail = (total >= PASS_MARK) ? "Pass" : "Fail";
 
-    // Step 4.5: print the result
+// Step 4.5: print the result
     cout << fixed << setprecision(1);
     cout << "Total: " << total << endl;
     cout << "Result: " << passFail << endl;
