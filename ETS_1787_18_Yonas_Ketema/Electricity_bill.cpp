@@ -57,6 +57,8 @@ int main() {
 
  int initialunits = (units > Tier_Limit) ? Tier_Limit : units;
  int extraunits = (units > Tier_Limit) ? (units - Tier_Limit) : 0;
+
+ cout << fixed << setprecision(2);
  
   
 
