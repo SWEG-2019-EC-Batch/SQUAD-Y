@@ -62,6 +62,9 @@ int main() {
  double totalbill = energycharge + Service_Charge;
 
  cout << fixed << setprecision(2);
+ cout << "Energy charge: " << energycharge << "birr" << endl;
+ cout << "Service charge: " << Service_Charge << "birr" << endl;
+ cout << "Total bill: " << totalbill << "birr" << endl;
  
  
   
