@@ -37,4 +37,4 @@ Write a C++ program that reads the distance of a trip in km, the travel time as 
 cout<<"Enter Trip distance, Travel hours, Travel minutes, Fuel per 100km, Price per liter";
 cin>>tripDistance>>travelHours>>travelMinutes>>travelTime>>pricePerLiter>>fuelPer100km;
 
-4.4 Perform the operations 
+4.4 Perform the operations
