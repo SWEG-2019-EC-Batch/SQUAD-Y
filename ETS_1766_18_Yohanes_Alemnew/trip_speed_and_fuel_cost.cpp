@@ -38,4 +38,3 @@ cout<<"Enter Trip distance, Travel hours, Travel minutes, Fuel per 100km, Price 
 cin>>tripDistance>>travelHours>>travelMinutes>>travelTime>>pricePerLiter>>fuelPer100km;
 
 4.4 Perform the operations 
-
