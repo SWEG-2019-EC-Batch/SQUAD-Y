@@ -96,6 +96,9 @@ int main() {
   cout << "Fuel used: " << fuelUsed << " liters" << endl;
   cout << "Fuel cost: " << fuelCost << " birr" << endl;
 
+  return 0;
+}
+
 
 
 
