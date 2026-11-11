@@ -91,6 +91,11 @@ int main() {
   double fuelUsed = distance / Fuel_Base_KM * fuelper100;
   double fuelCost = fuelUsed * priceperliter;
 
+  cout << fixed << setprecision(2);
+  cout << "Average speed: " << averageSpeed << " km/h" << endl;
+  cout << "Fuel used: " << fuelUsed << " liters" << endl;
+  cout << "Fuel cost: " << fuelCost << " birr" << endl;
+
 
 
 
