@@ -1,4 +1,4 @@
-1. Problem description
+/*1. Problem description
 Write a C++ program that reads the distance of a trip in km, the travel time as hours and minutes (whole numbers), the car’s fuel use in liters per 100 km and the price per liter (birr). Print the average speed (km/h), the fuel used (liters) and the fuel cost (birr), each with two decimals.
 
 2. Problem analysis
@@ -34,7 +34,62 @@ Write a C++ program that reads the distance of a trip in km, the travel time as 
       fuelCost                 double
 
 4.2 Reading input
-cout<<"Enter Trip distance, Travel hours, Travel minutes, Fuel per 100km, Price per liter";
-cin>>tripDistance>>travelHours>>travelMinutes>>travelTime>>pricePerLiter>>fuelPer100km;
+  cout<<"Enter Trip distance (km): ";
+  cin>>tripDistance;
+  cout<<"Enter Travel hours, and Travel minutes: ";
+  cin>>travelHours>>travelMinutes;
+  cout<<"Enter Fuel Per 100km (liters): ";
+  cin>>fuelPer100km;
+  cout<<"Price per liter (birr): ";
+  cin>>pricePerLiter;
 
 4.4 Perform the operations
+  fuelRate = fuelPer100km/100;
+  travelTime = travelHours+(travelMinutes/60);
+  averageSpeed = tripDistance/travelTime;
+  fuelUsed = fuelRate*tripDistance;
+  fuelCost = pricePerLiter*fuelUsed;
+
+4.5 Print the result
+  cout<<endl;
+  cout<<"Your Trip Details: ";
+  cout << fixed << setprecision(1);
+  cout<<"Average speed: "<<averageSpeed<<endl;
+  cout<<"Fuel used: "<<fuelUsed<<endl;
+  cout<<"Fuel cost: "<<fuelCost<<endl;
+
+5. Write the code*/
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main() {
+int tripDistance, travelHours, travelMinutes;
+double fuelRate, pricePerLiter, averageSpeed, fuelPer100km, fuelUsed, fuelCost, travelTime;
+
+cout<<"Enter Trip distance (km): ";
+cin>>tripDistance;
+cout<<"Enter Travel hours, and Travel minutes: ";
+cin>>travelHours>>travelMinutes;
+cout<<"Enter Fuel Per 100km (liter): ";
+cin>>fuelPer100km;
+cout<<"Price per liter (birr): ";
+cin>>pricePerLiter;
+
+
+fuelRate = fuelPer100km/100.0;
+travelTime = travelHours+(travelMinutes/60.0);
+averageSpeed = tripDistance/travelTime;
+fuelUsed = fuelRate*tripDistance;
+fuelCost = pricePerLiter*fuelUsed;
+
+cout<<endl;
+cout<<"Your Trip Details: "<<endl;
+cout<<fixed<<setprecision(2);
+cout<<"Average speed: "<<averageSpeed<<endl;
+cout<<"Fuel used: "<<fuelUsed<<endl;
+cout<<"Fuel cost: "<<fuelCost<<endl;
+
+return 0;
+
+}
