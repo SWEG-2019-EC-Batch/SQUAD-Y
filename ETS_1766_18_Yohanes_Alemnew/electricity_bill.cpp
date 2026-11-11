@@ -27,7 +27,7 @@ Write a C++ program that reads the electricity units (kWh, a whole number) used 
 const double SERVICE_CHARGE=10.0;
 
 4.3 Reading input
-cout<<"Enter the electricity units: ";
+cout<<"Enter the electricity units (kWh): ";
 cin>> electricityUnits;
 
 4.4 Perform the operations 
@@ -54,7 +54,7 @@ int main() {
      double energyCharge, totalBill, extraCost;
 
 // Step 4.3: read input
-     cout<<"Enter the electricity units: ";
+     cout<<"Enter the electricity units (kWh): ";
      cin>>electricityUnits;
 
 // Step 4.4: perform the operations
