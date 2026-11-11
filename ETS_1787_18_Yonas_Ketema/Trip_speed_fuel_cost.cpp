@@ -83,10 +83,10 @@ int main() {
   cin >> minutes;
   cout << " Enter fuel use (liters per 100 km: ";
   cin >> fuelper100;
-  cout << "Enter price per liter (birr): ";
+  cout << " Enter price per liter (birr): ";
   cin >> priceperliter;
 
-  double tatalHours = hours + minutes / Minutes_Per_Hour;
+  double totalHours = hours + minutes / Minutes_Per_Hour;
   double averageSpeed = distance / totalHours;
   double fuelUsed = distance / Fuel_Base_KM * fuelper100;
   double fuelCost = fuelUsed * priceperliter;
