@@ -37,6 +37,7 @@ cin>> electricityUnits;
   totalBill = energyCharge+SERVICE_CHARGE;
 
 4.5 Print the result
+  cout<<"Your bill details:" <<endl;
   cout<<fixed<<setpricion(2);
   cout<<"Energy change: "<<energyChange<<endl;
   cout<<"Service charge: "<<SERVICE_CHARGE<<end;
@@ -63,6 +64,7 @@ int main() {
      totalBill = energyCharge+SERVICE_CHARGE;
 
 // Step 4.5: print the result
+     cout<<"Your bill details:" <<endl;
      cout<<fixed<<setprecision(2);
      cout<<"Energy charge: "<<energyCharge<<endl;
      cout<<"Service charge: "<<SERVICE_CHARGE<<endl;
