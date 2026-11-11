@@ -72,11 +72,20 @@ int main() {
   const double Minutes_Per_Hour = 60.0;
   const double Fuel_Base_KM = 100.0;
 
+  double distance, fuelper100, priceperliter;
+  int hours, minutes;
 
- 
+  cout << " Enter distance (km): ";
+  cin >> distance;
+  cout << " Enetr travel time - hours: ";
+  cin >> hours;
+  cout << " Enter travel time - minutes: ";
+  cin >> minutes;
+  cout << " Enter fuel use (liters per 100 km: ";
+  cin >> fuelper100;
+  cout << "Enter price per liter (birr): ";
+  cin >> priceperliter;
 
 
-  
 
 
-4.4 Perform the operations
