@@ -59,10 +59,10 @@ C++ program */
 using namespace std;
 
 int main() {
-  const double Assignment_Weight = 0.2;
-  const double Midterm_Weight = 0.3;
-  const double Final_Weight = 0.5;
-  const double Pass_Mark = 50;
+  const double ASSIGNMENT_WEIGHT = 0.2;
+  const double MIDTERM_WEIGHT = 0.3;
+  const double FINAL_WEIGHT = 0.5;
+  const double PASS_MARK = 50;
 
   double assignment, midterm, finalmark;
   cout << "Enter your assignment mark (out of 100): ";
@@ -72,11 +72,11 @@ int main() {
   cout << "Enetr your final mark (out of 100): ";
   cin >> finalmark ;
 
-  double total = Assignment_Weight * assignment + Midterm_Weight * midterm + Final_Weight * finalmark ;
+  double total = ASSIGNMENT_WEIGHT * assignment +  MIDTERM_WEIGHT * midterm +  FINAL_WEIGHT * finalmark ;
 
   cout << fixed << setprecision(1);
   cout << "Course total: " << total << endl;
-  cout << "Result: " << (total >= Pass_Mark ? "Pass" : "Fail") << endl;
+  cout << "Result: " << (total >= PASS_MARK ? "Pass" : "Fail") << endl;
 
   return 0;
 }
