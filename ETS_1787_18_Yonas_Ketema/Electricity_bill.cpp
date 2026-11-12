@@ -47,24 +47,24 @@ cin>> electricityUnits;
 using namespace std;
 
 int main() {
-  const int Tier_Limit = 50;
-  const double Rate_Initial = 1.50;
-  const double Rate_Above = 2.00;
-  const double Service_Charge = 10.00;
+  const int TIER_LIMIT = 50;
+  const double RATE_INITIAL = 1.50;
+  const double RATE_ABOVE = 2.00;
+  const double SERVICE_CHANGE = 10.00;
   
   int units ;
   cout << "Enter electricity units used (kwh): ";
   cin >> units ;
 
-  int initialunits = (units > Tier_Limit) ? Tier_Limit : units;
-  int extraunits = (units > Tier_Limit) ? (units - Tier_Limit) : 0;
+  int initialunits = (units > TIER_LIMIT) ? TIER_LIMIT : units;
+  int extraunits = (units > TIER_LIMIT) ? (units - TIER_LIMIT) : 0;
 
-  double energycharge = initialunits * Rate_Initial + extraunits * Rate_Above;
-  double totalbill = energycharge + Service_Charge;
+  double energycharge = initialunits * RATE_INITIAL + extraunits * RATE_ABOVE;
+  double totalbill = energycharge + SERVICE_CHARGE;
 
   cout << fixed << setprecision(2);
   cout << "Energy charge: " << energycharge << "birr" << endl;
-  cout << "Service charge: " << Service_Charge << "birr" << endl;
+  cout << "Service charge: " << SERVICE_CHARGE << "birr" << endl;
   cout << "Total bill: " << totalbill << "birr" << endl;
 
   return 0;
