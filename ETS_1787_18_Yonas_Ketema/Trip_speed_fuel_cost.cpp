@@ -69,8 +69,8 @@ Constants :
 using namespace std;
 
 int main() {
-  const double Minutes_Per_Hour = 60.0;
-  const double Fuel_Base_KM = 100.0;
+  const double MINUTES_PER_HOUR = 60.0;
+  const double FUEL_BASE_KM = 100.0;
 
   double distance, fuelper100, priceperliter;
   int hours, minutes;
@@ -86,9 +86,9 @@ int main() {
   cout << " Enter price per liter (birr): ";
   cin >> priceperliter;
 
-  double totalHours = hours + minutes / Minutes_Per_Hour;
+  double totalHours = hours + minutes / MINUTES_PER_HOUR;
   double averageSpeed = distance / totalHours;
-  double fuelUsed = distance / Fuel_Base_KM * fuelper100;
+  double fuelUsed = distance / FUEL_BASE_KM * fuelper100;
   double fuelCost = fuelUsed * priceperliter;
 
   cout << fixed << setprecision(2);
