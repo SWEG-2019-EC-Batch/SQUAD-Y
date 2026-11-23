@@ -78,6 +78,15 @@ int main(){
             return 0;
     }
 
+    // Passenger and bag information
+    cout << "Enter your age: ";
+    cin >> age;
+    cout << "Are a student? (yes/no): ";
+    cin >> studentAnswer;
+    cout << "Enter bag weight (kg): ";
+    cin >> bagWeight;
+    cout << "Enter extra charge rate per kg (birr): ";
+    cin >> ratePerKg;
 
 
 
