@@ -24,3 +24,9 @@
 using namespace std;
 
 int main(){
+      // Constants
+    const double INITIAL_WEIGHT   = 20.0;   // kg allowed free
+    const double CHILD_RATE    = 0.50;   // age <= 12
+    const double ELDER_RATE    = 0.25;   // age >= 60
+    const double STUDENT_RATE  = 0.15;   // student
+
