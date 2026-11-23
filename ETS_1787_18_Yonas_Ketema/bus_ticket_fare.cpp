@@ -104,6 +104,11 @@ int main(){
                         + string(studentRate > 0.0 ? "Student " : "");
     discountType = (totalRate == 0.0) ? "None" : discountType;
 
+      // Calculations
+    double discount    = baseFare * totalRate;
+    double extraKg     = (bagWeight > INITIAL_WEIGHT) ? (bagWeight - INITIAL_WEIGHT) : 0.0;
+    double extraCharge = extraKg * ratePerKg;
+    double totalFare   = baseFare - discount + extraCharge;
 
 
 
