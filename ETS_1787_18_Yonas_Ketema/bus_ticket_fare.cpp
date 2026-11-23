@@ -88,6 +88,22 @@ int main(){
     cout << "Enter extra charge rate per kg (birr): ";
     cin >> ratePerKg;
 
+   // Discount rates (conditional operator)
+    double childRate   = (age <= 12) ? CHILD_RATE : 0.0;
+    double elderRate   = (age >= 60) ? ELDER_RATE : 0.0;
+    double studentRate = (studentAnswer == 'y' || studentAnswer == 'Y')
+                         ? STUDENT_RATE : 0.0;
+
+    // Discounts stack: add every applicable rate together
+    // e.g. child (50%) + student (15%) = 65%
+    double totalRate = childRate + elderRate + studentRate;
+    int    percent   = totalRate * 100 + 0.5;
+
+    string discountType = string(childRate   > 0.0 ? "Child "   : "")
+                        + string(elderRate   > 0.0 ? "Elder "   : "")
+                        + string(studentRate > 0.0 ? "Student " : "");
+    discountType = (totalRate == 0.0) ? "None" : discountType;
+
 
 
 
