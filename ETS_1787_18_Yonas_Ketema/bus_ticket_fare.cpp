@@ -35,6 +35,18 @@ int main(){
     float baseFare = 0.0, bagWeight, ratePerKg;
     string routeName;
 
+      // Route menu
+    cout << "===== BUS TICKET FARE SYSTEM =====" << endl;
+    cout << "1. Addis Ababa - Adama" << endl;
+    cout << "2. Addis Ababa - Fiche" << endl;
+    cout << "3. Addis Ababa - Hawassa" << endl;
+    cout << "4. Addis Ababa - Bahir Dar" << endl;
+    cout << "5. Addis Ababa - Dire Dawa" << endl;
+    cout << "6. Addis Ababa - Mekelle" << endl;
+    cout << "Select route (1-6): ";
+    cin >> route;
+
+
 
 
 
