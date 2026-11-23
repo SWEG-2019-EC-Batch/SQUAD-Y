@@ -110,5 +110,21 @@ int main(){
     double extraCharge = extraKg * ratePerKg;
     double totalFare   = baseFare - discount + extraCharge;
 
+     // Output
+    cout << fixed << setprecision(2);
+    cout << "************ TRIP INFORMATION ************" << endl;
+    cout << "Route"           << "             : " << routeName << endl;
+    cout << "Base fare"       << "         : " << right << baseFare    << " birr" << endl;
+    cout << "Discount type"   << "     : " << discountType << endl;
+    cout << "Discount rate"   << "     : " << right << percent     << "%" << endl;
+    cout << "Discount"        << "          : " << right << discount    << " birr" << endl;
+    cout << "Bag weight"      << "        : " << right << bagWeight   << " kg" << endl;
+    cout << "Extra weight"    << "      : " << right << extraKg     << " kg" << endl;
+    cout << "Extra bag charge"<< "  : " << right << extraCharge << " birr" << endl;
+    cout << "--------------------------------------" << endl;
+    cout << "TOTAL FARE"      << "        : " << right << totalFare   << " birr" << endl;
+
+    return 0;
+}
 
 
