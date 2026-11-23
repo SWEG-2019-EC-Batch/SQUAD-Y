@@ -29,4 +29,12 @@ int main(){
     const double CHILD_RATE    = 0.50;   // age <= 12
     const double ELDER_RATE    = 0.25;   // age >= 60
     const double STUDENT_RATE  = 0.15;   // student
+     // Variables
+    short int    route, age;
+    char   studentAnswer;
+    float baseFare = 0.0, bagWeight, ratePerKg;
+    string routeName;
+
+
+
 
