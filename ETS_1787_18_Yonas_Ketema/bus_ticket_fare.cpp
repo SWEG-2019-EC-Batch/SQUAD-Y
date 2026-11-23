@@ -46,6 +46,38 @@ int main(){
     cout << "Select route (1-6): ";
     cin >> route;
 
+     // Base fare depends on the route
+    switch (route)
+    {
+        case 1:
+            routeName = "Addis Ababa - Adama";
+            baseFare  = 150.0;
+            break;
+        case 2:
+            routeName = "Addis Ababa - Fiche";
+            baseFare  = 400.0;
+            break;    
+        case 3:
+            routeName = "Addis Ababa - Hawassa";
+            baseFare  = 450.0;
+            break;
+        case 4:
+            routeName = "Addis Ababa - Bahir Dar";
+            baseFare  = 900.0;
+            break;
+        case 5:
+            routeName = "Addis Ababa - Dire Dawa";
+            baseFare  = 1000.0;
+            break;
+        case 6:
+            routeName = "Addis Ababa - Mekelle";
+            baseFare  = 1300.0;
+            break;
+        default:
+            cout << "Invalid route number. Program ended." << endl;
+            return 0;
+    }
+
 
 
 
