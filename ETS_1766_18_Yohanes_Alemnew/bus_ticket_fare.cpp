@@ -22,6 +22,7 @@ cout << "5. Gondar" << endl;
 cout << "6. Adama" << endl;
 cout << "7. Bishoftu" << endl;
 
+cout<<endl;
 cout << "Enter your choice: ";
 cin >> destination;
 
@@ -59,7 +60,7 @@ switch (destination)
         cout << "Invalid destination!";
         return 0;
 }
-
+    
     cout<<"Enter the base fare in (birr) ";
     cin>>base_fare;
     cout<<"Enter the bag weight in (kg) ";
@@ -99,6 +100,7 @@ if (bag_weight>WEIGHT_LIMIT)
 
 float total_fare=base_fare+Extra_Charge;
 
+cout<<endl;
 cout<<"Your trip fare information is: "<<endl;
 cout<<"Base fare: "<<base_fare<<endl;
 cout<<"Extra charge: "<< Extra_Charge<<endl;
